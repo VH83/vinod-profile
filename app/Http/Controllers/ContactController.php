@@ -13,6 +13,7 @@ class ContactController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
         ]);        
+        // return $request;
         $user = Contact::create($request->all());
         // return $user;
         return back();

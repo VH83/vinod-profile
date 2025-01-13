@@ -128,7 +128,10 @@
                         <textarea name="message" id="message" rows="4" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"></textarea>
                     </div>
                     <div class="text-center">
-                        <button type="submit" class="border-2 border-blue-500 hover:border-blue-700 px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium text-lg rounded-lg hover:bg-gradient-to-l transition duration-300 ease-in-out transform hover:scale-105 w-fit mx-auto">
+                        <button type="submit" class="g-recaptcha border-2 border-blue-500 hover:border-blue-700 px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium text-lg rounded-lg hover:bg-gradient-to-l transition duration-300 ease-in-out transform hover:scale-105 w-fit mx-auto"
+                            data-sitekey="{{ env('GOOGLE_CAPTCHA_SITE_KEY')}}" 
+                            data-callback='onSubmit' 
+                            data-action='submit'>
                             Submit
                         </button>
                     </div>

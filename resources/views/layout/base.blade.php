@@ -168,5 +168,10 @@
         // Set the current year dynamically
         document.getElementById("current-year").textContent = new Date().getFullYear();
     </script>
+     <script>
+        function onSubmit(token) {
+          document.getElementById("demo-form").submit();
+        }
+      </script>
 </body>
 </html>
